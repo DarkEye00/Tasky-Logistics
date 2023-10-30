@@ -8,23 +8,25 @@
       rel="stylesheet"
       href="{{url_for('static', filename='css/style.css')}}"
     />
+    <script src="{{url_for('static', filename='js/menu.js')}}" defer></script>
   </head>
+
   <body class="py-8 px-9 bg-[#ededed] text-slate-800">
     <div class="h-[90vh] bg-blue-700/40 shadow-2xl rounded-xl">
       <!--Nav Bar-->
-      <div class="flex justify-between">
+      <header class="flex justify-between">
         <img
           class="h-11 p-2 rounded-md"
           src="{{url_for('static', filename='media/Tasky.jpg')}}"
         />
 
-        <section>
-          <div class="flex font-bold mr-10 font-serif text-lg">
-            <button class="text-6xl md:hidden focus:outline-none">
+        <section class="flex font-bold mr-10 font-serif text-lg">
+          <div>
+            <button class="text-5xl md:hidden focus:outline-none" id="hmg-btn">
               &#9776;
             </button>
 
-            <nav class="flex flex-row gap-10">
+            <nav class="flex-row gap-10 hidden md:block">
               <a class="py-3">HOME</a>
               <a class="py-3">SERVICES</a>
               <a class="py-3">ABOUT US</a>
@@ -32,7 +34,8 @@
             </nav>
           </div>
         </section>
-      </div>
+        <!--The Moble hero section will be different from the one in PC-->
+      </header>
     </div>
   </body>
 </html>
