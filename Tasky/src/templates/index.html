@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasky</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='css/style.css')}}"
+    />
+  </head>
+  <body class="py-8 px-9 bg-[#ededed] text-slate-800">
+    <div class="h-[90vh] bg-blue-700/40 shadow-2xl rounded-xl">
+      <!--Nav Bar-->
+      <div class="flex justify-between">
+        <img
+          class="h-11 p-2 rounded-md"
+          src="{{url_for('static', filename='media/Tasky.jpg')}}"
+        />
+
+        <section>
+          <div class="flex font-bold mr-10 font-serif text-lg">
+            <button class="text-6xl md:hidden focus:outline-none">
+              &#9776;
+            </button>
+
+            <nav class="flex flex-row gap-10">
+              <a class="py-3">HOME</a>
+              <a class="py-3">SERVICES</a>
+              <a class="py-3">ABOUT US</a>
+              <a class="py-3">CONTACT US</a>
+            </nav>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

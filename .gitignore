@@ -3,3 +3,8 @@ Lib
 Scripts
 activate venv
 pyvenv.cfg
+node_modules
+package.json
+package-lock.json
+tailwind.config.js
+
