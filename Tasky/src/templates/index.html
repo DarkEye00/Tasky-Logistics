@@ -39,7 +39,7 @@
     <!---->
     <div class="h-[90vh] bg-blue-700/40 shadow-xl rounded-xl">
       <!--Nav Bar-->
-      <header class="flex justify-between text-gray-700">
+      <header class="flex justify-between text-gray-700 py-1">
         <img
           class="h-11 p-2 rounded-md"
           src="{{url_for('static', filename='media/Tasky.jpg')}}"
@@ -66,28 +66,35 @@
       </header>
       <!---->
       <!---->
-      <div class="flex flex-col py-20 ml-14">
-        <h1 class="text-6xl pb-3 font-serif">
-          DELIVER <br />PRODUCTS<br />
-          WITH EASE
-        </h1>
+      <div class="grid grid-flow-col col-span-2 ml-14 py-10">
+        <div class="mt-16">
+          <h1 class="text-6xl pb-3 font-serif">
+            DELIVER <br />PRODUCTS<br />
+            WITH EASE
+          </h1>
 
-        <h2 class="text-xl pl-5 font-playpen">
-          Let Tasky Logistics handle the<br />
-          heavy while you focus on what<br />
-          truly matters- Your Business
-        </h2>
+          <h2 class="text-xl pl-5 font-playpen">
+            Let Tasky Logistics handle the<br />
+            heavy while you focus on what<br />
+            truly matters- Your Business
+          </h2>
 
-        <button
-          class="bg-yellow-200 w-32 mt-5 mx-20 py-2 px-1 rounded-md shadow-xl font-bold font-sans hover:bg-blue-700/40"
-        >
-          Request Quote
-        </button>
+          <button
+            class="bg-yellow-200 w-32 mt-5 mx-20 py-2 px-1 rounded-md shadow-xl font-bold font-sans hover:bg-blue-700/40"
+          >
+            Request Quote
+          </button>
+        </div>
+        <div class="flex flex-row gap-5 pb-32">
+          <img class="w-[300px] h-[450px] object-cover rounded-md shadow-xl"  src="{{url_for('static', filename='media/truck.jpg')}}" />
+          <img class="w-[300px] h-[450px] object-cover rounded-md shadow-xl" src="{{url_for('static', filename='media/truck2.jpg')}}"/>
+        </div>
       </div>
 
-      <!---->
+      
+      
     </div>
-
+    <!--copyright footer-->
     <div>
       <p class="text-center">&copy;2023 <span class="text-2xl">&#8739</span>All Rights Reserved <span class="text-2xl">&#8739</span>Tasky Logistics</p>
     </div>
