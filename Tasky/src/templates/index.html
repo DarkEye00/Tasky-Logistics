@@ -8,25 +8,33 @@
       rel="stylesheet"
       href="{{url_for('static', filename='css/style.css')}}"
     />
-    <script src="{{url_for('static', filename='js/menu.js')}}" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
-  <body class="py-8 px-9 bg-[#ededed] text-slate-800">
-    <div class="h-[90vh] bg-blue-700/40 shadow-2xl rounded-xl">
+  <body class="py-8 px-9 bg-[#ededed] text-gray-700">
+    <div class="h-[90vh] bg-blue-700/40 shadow-xl rounded-xl">
       <!--Nav Bar-->
-      <header class="flex justify-between">
+      <header class="flex justify-between text-gray-700">
         <img
           class="h-11 p-2 rounded-md"
           src="{{url_for('static', filename='media/Tasky.jpg')}}"
         />
 
-        <section class="flex font-bold mr-10 font-serif text-lg">
-          <div>
-            <button class="text-5xl md:hidden focus:outline-none" id="hmg-btn">
+        <section>
+          <div class="flex items-center font-bold mr-10 font-serif text-lg">
+            <button
+              class="text-5xl md:hidden focus:outline-none -mr-10"
+              id="hmg-btn"
+            >
               &#9776;
             </button>
 
-            <nav class="flex-row gap-10 hidden md:block">
+            <nav class="flex-row gap-10 hidden md:flex">
               <a class="py-3">HOME</a>
               <a class="py-3">SERVICES</a>
               <a class="py-3">ABOUT US</a>
@@ -36,6 +44,28 @@
         </section>
         <!--The Moble hero section will be different from the one in PC-->
       </header>
+      <!---->
+      <!---->
+      <div class="flex flex-col py-20 ml-14">
+        <h1 class="text-6xl pb-3 font-serif">
+          DELIVER <br />PRODUCTS<br />
+          WITH EASE
+        </h1>
+
+        <h2 class="text-xl pl-5 font-playpen">
+          Let Tasky Logistics handle the<br />
+          heavy while you focus on what<br />
+          truly matters- Your Business
+        </h2>
+
+        <button
+          class="bg-yellow-200 w-32 mt-5 mx-20 py-2 px-1 rounded-md shadow-xl font-bold font-sans hover:bg-blue-700/40"
+        >
+          Request Quote
+        </button>
+      </div>
+
+      <!---->
     </div>
   </body>
 </html>
