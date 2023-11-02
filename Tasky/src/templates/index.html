@@ -61,7 +61,7 @@
       </a>
     </div>
     <div
-      class="relative bg-blue-700/40 mx-2 mt-10 h-[100vh] rounded-xl drop-shadow-2xl shadow-2xl overflow-y-hidden"
+      class="relative bg-blue-500/50 mx-2 mt-10 h-[92vh] rounded-xl drop-shadow-2xl shadow-2xl overflow-y-hidden"
     >
       <header class="flex justify-between items-center p-2">
         <img
@@ -69,7 +69,6 @@
           src="{{url_for('static', filename='media/Tasky.jpg')}}"
         />
         <section>
-
           <div>
             <button class="text-4xl min-[675px]:hidden font-bold">
               &#9776;
@@ -84,9 +83,7 @@
               <a>CONTACT US</a>
             </nav>
           </div>
-          
         </section>
-
       </header>
 
       <div class="grid grid-flow-col mt-10 pt-10">
@@ -108,25 +105,130 @@
             heavy lifting while you focus <br />on what truly matters- Your
             Business
           </h2>
-
+          
           <button
-            class="bg-yellow-200 w-32 mt-5 py-2 px-1 rounded-md shadow-xl font-bold font-sans hover:bg-blue-700/40"
+            class="bg-yellow-200 w-32 mt-10 py-2 px-1 rounded-md shadow-xl font-bold font-sans hover:bg-blue-700/40"
           >
             Request Quote
-          </button>
+          </button> 
         </div>
 
         <div
           class="min-[620px]:block lg:flex lg:flex-row -mb-20 p-2 max-[620px]:hidden gap-10 xl:ml-20"
         >
-          <img class=" w-[300px] h-[400px] object-cover rounded-lg"
-          src="{{url_for('static', filename="media/truck.jpg")}}" /> <img
-          class=" w-[300px] h-[400px] object-cover rounded-lg hidden lg:block"
+          <img class=" w-[400px] h-[400px] object-cover rounded-lg lg:w-[300px]"
+          src="{{url_for('static', filename="media/truck.jpg")}}" />
+
+          <img
+          class="mr-5 w-[300px] h-[400px] object-cover rounded-lg hidden lg:block"
           src="{{url_for('static', filename="media/truck2.jpg")}}" />
         </div>
       </div>
 
       <!---->
     </div>
+    <!--Services Section-->
+    <section>
+      <div class="flex-wrap p-10 font-serif text-xl text-start md:text-justify">
+        <h1 class="text-center text-4xl font-bold text-blue-500 pb-3">Services</h1>
+
+        <p>
+          Providing logistics and transportation services is our core
+          competency.<br />
+          Our main functional areas are transportation and distribution. We have
+          enough fleet of trucks, delivery vans and equipment that are operated
+          by highly professional persons, who are ready to cater for your
+          transport needs. Utilizing our own fleet of trucks that range from
+          half-ton pick-ups, 10-ton trucks, car carriers, low loaders to 40-ton
+          semi-trailers. We provide transport to all destinations in East Africa
+          and have the capacity to transport your cargo/goods.
+
+          Precisely Tasky Logistics Ltd offers:
+          <ul class="ml-10 list-disc py-2">
+            <li><span class="font-bold">General Freight Transport:</span> Whether it's small packages or large cargo, we offer a comprehensive solution to meet your transport needs.</li>
+            <li><span class="font-bold">Express Courier Services:</span> Need something urgently? Whether same day delivery, overnight shipping, nationwide deliveries. Our express service ensures your goods arrive at their destination in record time.</li>
+            <li><span class="font-bold">Last-Mile Delivery:</span> We specialize in reaching the final destination, ensuring that your products are delivered directly to your customer's doorstep.</li>
+            <li><span class="font-bold">Distribution:</span> Our distribution services offer flexible, cost-effective solutions for your needs.</li>
+            <li><span class="font-bold">Customized transport:</span> We offer dedicated vehicles, route optimization and special handling and secure transport.</li>
+          </ul>
+        </p>
+        <p class="text-center text-blue-500 italic font-playpen font-semibold">Secure.Safe.Delivering Confidence</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="relative grid grid-flow-col col-span-2 p-10 font-serif text-xl text-justify gap-10 md:w-3/4 ">
+        <div>
+        <h1 class="text-center text-4xl font-bold text-blue-500 pb-3">About Us</h1>
+        <p>Tasky Transport is a dynamic and innovative transport and Logistics Company, with a strategic specialized fleet, providing solutions throughout Kenya for a diverse range of customers. Our blend of owned vehicles, comprehensive innovative solutions, strategic partnerships, 4PL and 3Pl service offerings coupled with excellent service, quick decision making and first-hand knowledge enables us to supply our customers with a tailor made, reliable and cost effective solution, meeting specific requirements of customers. This is accomplished by learning customer’s exact objectives with regards to their internal and external requirements, thus ensuring that Tasky Logistics will provide quality services more consistently than any other service provider in the market.
+          <!-- <br /> THIS PART SHOULD FLOW IN WITH THE PHOTO ON THE SIDE
+          Tasky Transport’s operation has grown to its current size due to our integrity, drive to supply innovative solutions to our customers and integration ability of elements within the supply chain and the various cultures involved across Kenya. This ability remains the cornerstone of our current operation. 
+          -->
+          </p>
+          </div>
+
+          <div class="justify-center items-center hidden md:flex">
+            <img src="{{url_for('static', filename='media/Tasky.jpg')}}"/>
+          </div>
+      </div>
+    </section>
+
+    <section class="mb-20">
+      <div class="w-auto p-10">
+        <div class="flex flex-row max-sm:flex-col col-span-2 shadow-xl">
+          <div class="bg-blue-500/60 text white text-xl p-5 w-[inherit] italic">
+              <h1 class="text-2xl">Hi There!</h1> <br>
+              <h4>Reaching Tasky Logistics is now a mail away</h4><br>
+              <h4>Send us your complaint/Compliment or Request a quote through this form</h4>
+              
+          </div>
+          <div class="bg-slate-100 p-5 w-full">
+             
+              <form class="space-y-5" onsubmit="sendMail()">
+                  <div class="flex flex-col col-span-2">
+                    <label for="email">Name/Company Name</label>
+                    <input class="w-[inherit] placeholder:italic p-2 rounded-md shadow-2xl" type="name" id="name" name="name" placeholder="Name/Company Name" required />
+                  </div>
+  
+                  <div class="flex flex-col col-span-2">
+                    <label for="email">Email</label>
+                    <input class="w-[inherit] placeholder:italic p-2 rounded-md shadow-2xl" type="email" id="email"
+                    name="email" placeholder="Email" required/>
+                  </div>
+                  
+                  <div class="flex flex-col col-span-2">
+                    <label for="subject">Subject:</label>
+                    <input class="w-[inherit] placeholder:italic p-2 rounded-md shadow-2xl" type="subject" id="subject" name="subject" placeholder="Subject" required />
+                  </div>
+  
+                  <div class="flex flex-col col-span-2">
+                    <label for="message">Message:</label>
+                    <textarea
+                      class="w-[inherit] placeholder:italic p-2 rounded-md shadow-2xl"
+                      id="message"
+                      name="message"
+                      rows="4"
+                      cols="50"
+                      placeholder="Message"
+                      required
+                    ></textarea>
+                  </div>  
+  
+                  <input class="bg-blue-500/60 rounded-xl shadow-xl px-5 py-2 my-3 text-lg font-semibold"type="submit" value="Send">
+                
+              </form>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <div>
+    <footer>
+      
+    </footer>
+  </div>
+
+  <p class="text-center w-full pb-0 py-2 mb-0 text-base min-[375px]:py-3 2xl:text-2xl">&copy;2023 <span class="text-2xl">&#8739</span>All Rights Reserved <span class="text-2xl">&#8739</span>Tasky Logistics</p>
+        
   </body>
 </html>
