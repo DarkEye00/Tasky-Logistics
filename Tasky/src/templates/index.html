@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tasky</title>
+    <title>Tasky Logistics</title>
+    <link rel="shortcut icon" type="image/png" href="{{url_for('static', filename='media/Tasky ico.png')}}" />
     <link
       rel="stylesheet"
       href="{{url_for('static', filename='css/style.css')}}"
@@ -166,15 +167,20 @@
           </p>
           </div>
 
-          <div class="justify-center items-center hidden md:flex flex-col md:text-justify" data-aos="fade-left">
+          <div class="justify-center items-center hidden md:flex flex-col md:text-justify p-1" data-aos="fade-left">
             
-            <img src="{{url_for('static', filename='media/Tasky.jpg')}}"/>
-            <p>
+            <img src="{{url_for('static', filename='media/delivery.jpg')}}"/>
+            <p class="p-2">
               Tasky Transport’s operation has grown to its current size due to our integrity, drive to supply innovative solutions to our customers and integration ability of elements within the supply chain and the various cultures involved across Kenya. This ability remains the cornerstone of our current operation. 
              </p>
           </div>
       </div>
     </section>
+      <div class="text-blue-500 text-2xl flex items-center">
+          <hr class="flex-grow border-t border-blue-500" />
+          <span>Tasky Logistics Ltd.</span>
+          <hr class="flex-grow border-t border-blue-500"/>
+      </div>
 
     <section class="mb-20" id="contact">
     
