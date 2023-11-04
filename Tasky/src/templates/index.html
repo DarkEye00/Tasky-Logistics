@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,12 +14,14 @@
       href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 
   <body class="bg-[#ededed] text-gray-700 min-h-screen">
     <div class="absolute top-1 right-12 flex flex-row gap-5">
       <!--Social Media handles-->
-      <h1 class="font-semibold text-xl">Follow:</h1>
+      <h1 class="font-semibold text-xl">Follow Us On:</h1>
       <a href="#"
         ><!--Instagram-->
         <svg
@@ -60,8 +62,8 @@
         </svg>
       </a>
     </div>
-    <div
-      class="relative bg-blue-500/50 mx-2 mt-10 h-[92vh] rounded-xl drop-shadow-2xl shadow-2xl overflow-y-hidden"
+    <div id="home"
+      class="relative bg-blue-500/60 mx-2 mt-10 h-[95vh] rounded-xl drop-shadow-2xl shadow-2xl overflow-y-hidden"
     >
       <header class="flex justify-between items-center p-2">
         <img
@@ -75,22 +77,21 @@
             </button>
 
             <nav
-              class="mr-10 font-serif font-semibold space-x-5 text-lg hidden min-[675px]:flex"
-            >
-              <a>HOME</a>
-              <a>SERVICES</a>
-              <a>ABOUT US</a>
-              <a>CONTACT US</a>
+              class="mr-6 font-serif font-semibold space-x-5 text-lg hidden min-[675px]:flex">
+              <a class="hover:text-yellow-200/80 hover:underline transition ease-in-out delay-100 hover:-translate-y-2" href="#home">HOME</a>
+              <a class="hover:text-yellow-200/80 hover:underline  transition ease-in-out delay-100 hover:-translate-y-2" href="#services">SERVICES</a>
+              <a class="hover:text-yellow-200/80 hover:underline  transition ease-in-out delay-100 hover:-translate-y-2" href="#about">ABOUT US</a>
+              <a class="hover:text-yellow-200/80 hover:underline  transition ease-in-out delay-100 hover:-translate-y-2" href="#contact">CONTACT US</a>
             </nav>
           </div>
         </section>
       </header>
 
-      <div class="grid grid-flow-col mt-10 pt-10">
-        <div class="max-w-prose flex flex-col justify-center items-center">
+      <div class="grid grid-flow-col mt-10">
+        <div class="max-w-prose flex flex-col justify-center items-center ">
           <div class="mx-10 min-[620px]:hidden">
             <img
-              class="rounded-md"
+              class="rounded-md h-[200px]"
               src="{{url_for('static', filename='media/truck.jpg')}}"
             />
           </div>
@@ -107,7 +108,7 @@
           </h2>
           
           <button
-            class="bg-yellow-200 w-32 mt-10 py-2 px-1 rounded-md shadow-xl font-bold font-sans hover:bg-blue-700/40"
+            class="bg-yellow-200 w-32 mt-10 py-2 px-1 rounded-md shadow-xl font-bold font-sans hover:bg-blue-700/40 cursor-pointer"
           >
             Request Quote
           </button> 
@@ -128,7 +129,7 @@
       <!---->
     </div>
     <!--Services Section-->
-    <section>
+    <section data-aos="fade-down" id="services">
       <div class="flex-wrap p-10 font-serif text-xl text-start md:text-justify">
         <h1 class="text-center text-4xl font-bold text-blue-500 pb-3">Services</h1>
 
@@ -152,29 +153,33 @@
             <li><span class="font-bold">Customized transport:</span> We offer dedicated vehicles, route optimization and special handling and secure transport.</li>
           </ul>
         </p>
-        <p class="text-center text-blue-500 italic font-playpen font-semibold">Secure.Safe.Delivering Confidence</p>
+        <p class="text-center text-blue-500 italic font-playpen font-semibold mt-5">Secure.Safe.Delivering Confidence</p>
       </div>
     </section>
 
-    <section>
-      <div class="relative grid grid-flow-col col-span-2 p-10 font-serif text-xl text-justify gap-10 md:w-3/4 ">
+    <section data-aos="fade-down" id="about">
+      <div class="relative grid grid-flow-col col-span-2 p-5 font-serif text-xl text-justify gap-10 ml-2">
         <div>
         <h1 class="text-center text-4xl font-bold text-blue-500 pb-3">About Us</h1>
         <p>Tasky Transport is a dynamic and innovative transport and Logistics Company, with a strategic specialized fleet, providing solutions throughout Kenya for a diverse range of customers. Our blend of owned vehicles, comprehensive innovative solutions, strategic partnerships, 4PL and 3Pl service offerings coupled with excellent service, quick decision making and first-hand knowledge enables us to supply our customers with a tailor made, reliable and cost effective solution, meeting specific requirements of customers. This is accomplished by learning customer’s exact objectives with regards to their internal and external requirements, thus ensuring that Tasky Logistics will provide quality services more consistently than any other service provider in the market.
-          <!-- <br /> THIS PART SHOULD FLOW IN WITH THE PHOTO ON THE SIDE
-          Tasky Transport’s operation has grown to its current size due to our integrity, drive to supply innovative solutions to our customers and integration ability of elements within the supply chain and the various cultures involved across Kenya. This ability remains the cornerstone of our current operation. 
-          -->
+          
           </p>
           </div>
 
-          <div class="justify-center items-center hidden md:flex">
+          <div class="justify-center items-center hidden md:flex flex-col md:text-justify" data-aos="fade-left">
+            
             <img src="{{url_for('static', filename='media/Tasky.jpg')}}"/>
+            <p>
+              Tasky Transport’s operation has grown to its current size due to our integrity, drive to supply innovative solutions to our customers and integration ability of elements within the supply chain and the various cultures involved across Kenya. This ability remains the cornerstone of our current operation. 
+             </p>
           </div>
       </div>
     </section>
 
-    <section class="mb-20">
+    <section class="mb-20" id="contact">
+    
       <div class="w-auto p-10">
+        <h1 class="text-3xl text-blue-500 font-bold ml-5 p-2">Contact Us</h1>
         <div class="flex flex-row max-sm:flex-col col-span-2 shadow-xl">
           <div class="bg-blue-500/60 text white text-xl p-5 w-[inherit] italic">
               <h1 class="text-2xl">Hi There!</h1> <br>
@@ -222,13 +227,19 @@
       </div>
   </section>
 
-  <div>
+  <section>
     <footer>
       
     </footer>
-  </div>
+  </section>
 
-  <p class="text-center w-full pb-0 py-2 mb-0 text-base min-[375px]:py-3 2xl:text-2xl">&copy;2023 <span class="text-2xl">&#8739</span>All Rights Reserved <span class="text-2xl">&#8739</span>Tasky Logistics</p>
-        
+  <p class="text-center w-full pb-0 py-2 mb-0 text-base min-[375px]:py-3 2xl:text-2xl">&copy;2023 <span class="text-2xl">&#8739</span>All Rights Reserved <span class="text-2xl">&#8739</span>Tasky Logistics Ltd.</p>
+        <script>
+          AOS.init({
+            duration: 1500, // values from 0 to 3000, with step 50ms
+            easing: 'ease',
+          });
+          
+        </script>
   </body>
 </html>
