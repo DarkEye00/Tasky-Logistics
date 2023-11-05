@@ -16,231 +16,90 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/ed6fec6a07.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 
-  <body class="bg-[#ededed] text-gray-700 min-h-screen">
-    <div class="absolute top-1 right-12 flex flex-row gap-5 italic">
-      <!--Social Media handles-->
-      <h1 class="font-semibold text-xl">Follow Us On:</h1>
-      <a href="#"
-        ><!--Instagram-->
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="1.5em"
-          viewBox="0 0 448 512"
-          class="2xl:h-[3rem]"
-        >
-          <path
-            d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"
-          />
-        </svg>
-      </a>
-      <a target="_blank"
-        ><!--Twitter-->
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="1.5em"
-          viewBox="0 0 448 512"
-          class="2xl:h-[3rem]"
-        >
-          <path
-            d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"
-          />
-        </svg>
-      </a>
-      <a target="_blank"
-        ><!--LinkedIn -->
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="1.5em"
-          viewBox="0 0 448 512"
-          class="2xl:h-[3rem]"
-        >
-          <path
-            d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
-          />
-        </svg>
-      </a>
-    </div>
-    <div id="home"
-      class="relative bg-blue-500/60 mx-2 mt-10 h-[95vh] rounded-xl drop-shadow-2xl shadow-2xl overflow-y-hidden"
-    >
-      <header class="flex justify-between items-center p-2">
-        <img
-          class="h-8"
-          src="{{url_for('static', filename='media/Tasky.jpg')}}"
-        />
-        <section>
-          <div>
-            <button class="text-4xl min-[675px]:hidden font-bold">
-              &#9776;
-            </button>
+  <body class="bg-[#ededed] text-gray-700 min-h-screen overflow-x-clip">
+    <!--header-->
+    <header class="w-full fixed bg-blue-700/80 z-50">
+      <section class="flex justify-between items-center w-full p-3">
+        <img class="w-20 ml-5 md:ml-20" src="{{url_for('static', filename='media/Tasky.jpg')}}"/>
 
-            <nav
-              class="mr-6 font-serif font-semibold space-x-5 text-lg hidden min-[675px]:flex">
-              <a class="hover:text-yellow-200/80 hover:underline transition ease-in-out delay-100 hover:-translate-y-2" href="#home">HOME</a>
-              <a class="hover:text-yellow-200/80 hover:underline  transition ease-in-out delay-100 hover:-translate-y-2" href="#services">SERVICES</a>
-              <a class="hover:text-yellow-200/80 hover:underline  transition ease-in-out delay-100 hover:-translate-y-2" href="#about">ABOUT US</a>
-              <a class="hover:text-yellow-200/80 hover:underline  transition ease-in-out delay-100 hover:-translate-y-2" href="#contact">CONTACT US</a>
-            </nav>
-          </div>
-        </section>
-      </header>
-
-      <div class="grid grid-flow-col mt-10">
-        <div class="max-w-prose flex flex-col justify-center items-center ">
-          <div class="mx-10 min-[620px]:hidden">
-            <img
-              class="rounded-md h-[200px]"
-              src="{{url_for('static', filename='media/truck.jpg')}}"
-            />
-          </div>
-          <h1 class="font-serif text-4xl md:text-start md:text-6xl">
-            DELIVER <br />PRODUCTS<br />
-            WITH EASE
-          </h1>
-          <h2
-            class="text-xl font-playpen font-semibold mt-5 md:text-start px-1"
-          >
-            Let Tasky Logistics handle the<br />
-            heavy lifting while you focus <br />on what truly matters- Your
-            Business
-          </h2>
-          
-          <button
-            class="bg-yellow-200 w-32 mt-10 py-2 px-1 rounded-md shadow-xl font-bold font-sans hover:bg-blue-700/40 cursor-pointer"
-          >
-            Request Quote
-          </button> 
-        </div>
-
-        <div
-          class="min-[620px]:block lg:flex lg:flex-row -mb-20 p-2 max-[620px]:hidden gap-10 xl:ml-20"
-        >
-          <img class=" w-[400px] h-[400px] object-cover rounded-lg lg:w-[300px]"
-          src="{{url_for('static', filename="media/truck.jpg")}}" />
-
-          <img
-          class="mr-5 w-[300px] h-[400px] object-cover rounded-lg hidden lg:block"
-          src="{{url_for('static', filename="media/truck2.jpg")}}" />
-        </div>
-      </div>
-
-      <!---->
-    </div>
-    <!--Services Section-->
-    <section data-aos="fade-down" id="services">
-      <div class="flex-wrap p-10 font-serif text-xl text-start md:text-justify">
-        <h1 class="text-center text-4xl font-bold text-blue-500 pb-3">Services</h1>
-
-        <p>
-          Providing logistics and transportation services is our core
-          competency.<br />
-          Our main functional areas are transportation and distribution. We have
-          enough fleet of trucks, delivery vans and equipment that are operated
-          by highly professional persons, who are ready to cater for your
-          transport needs. Utilizing our own fleet of trucks that range from
-          half-ton pick-ups, 10-ton trucks, car carriers, low loaders to 40-ton
-          semi-trailers. We provide transport to all destinations in East Africa
-          and have the capacity to transport your cargo/goods.
-
-          Precisely Tasky Logistics Ltd offers:
-          <ul class="ml-10 list-disc py-2">
-            <li><span class="font-bold">General Freight Transport:</span> Whether it's small packages or large cargo, we offer a comprehensive solution to meet your transport needs.</li>
-            <li><span class="font-bold">Express Courier Services:</span> Need something urgently? Whether same day delivery, overnight shipping, nationwide deliveries. Our express service ensures your goods arrive at their destination in record time.</li>
-            <li><span class="font-bold">Last-Mile Delivery:</span> We specialize in reaching the final destination, ensuring that your products are delivered directly to your customer's doorstep.</li>
-            <li><span class="font-bold">Distribution:</span> Our distribution services offer flexible, cost-effective solutions for your needs.</li>
-            <li><span class="font-bold">Customized transport:</span> We offer dedicated vehicles, route optimization and special handling and secure transport.</li>
-          </ul>
-        </p>
-        <p class="text-center text-blue-500 italic font-playpen font-semibold mt-5">Secure.Safe.Delivering Confidence</p>
-      </div>
-    </section>
-
-    <section data-aos="fade-down" id="about">
-      <div class="relative grid grid-flow-col col-span-2 p-5 font-serif text-xl text-justify gap-10 ml-2">
         <div>
-        <h1 class="text-center text-4xl font-bold text-blue-500 pb-3">About Us</h1>
-        <p>Tasky Transport is a dynamic and innovative transport and Logistics Company, with a strategic specialized fleet, providing solutions throughout Kenya for a diverse range of customers. Our blend of owned vehicles, comprehensive innovative solutions, strategic partnerships, 4PL and 3Pl service offerings coupled with excellent service, quick decision making and first-hand knowledge enables us to supply our customers with a tailor made, reliable and cost effective solution, meeting specific requirements of customers. This is accomplished by learning customer’s exact objectives with regards to their internal and external requirements, thus ensuring that Tasky Logistics will provide quality services more consistently than any other service provider in the market.
-          
-          </p>
-          </div>
+          <button class="text-4xl font-bold text-white md:hidden">&#9776;</button>
 
-          <div class="justify-center items-center hidden md:flex flex-col md:text-justify p-1" data-aos="fade-left">
-            
-            <img src="{{url_for('static', filename='media/delivery.jpg')}}"/>
-            <p class="p-2">
-              Tasky Transport’s operation has grown to its current size due to our integrity, drive to supply innovative solutions to our customers and integration ability of elements within the supply chain and the various cultures involved across Kenya. This ability remains the cornerstone of our current operation. 
-             </p>
-          </div>
-      </div>
-    </section>
-      <div class="text-blue-500 text-2xl flex items-center">
-          <hr class="flex-grow border-t border-blue-500" />
-          <span>Tasky Logistics Ltd.</span>
-          <hr class="flex-grow border-t border-blue-500"/>
-      </div>
-
-    <section class="mb-10" id="contact">
-    
-      <div class="w-auto p-5">
-        <h1 class="text-3xl text-blue-500 font-bold ml-5 p-2">Contact Us</h1>
-        <div class="flex flex-row max-sm:flex-col col-span-2 shadow-xl w-full">
-          <div class="bg-blue-500/60 text white text-xl p-5 w-[inherit] italic">
-              <h1 class="text-2xl">Hi There!</h1> <br>
-              <h4>Reaching Tasky Logistics is now a mail away</h4><br>
-              <h4>Send us your complaint/Compliment or Request a quote through this form</h4>
-              
-          </div>
-          <div class="bg-slate-100 p-5 w-full">
-             
-              <form class="space-y-5" onsubmit="sendMail()">
-                  <div class="flex flex-col col-span-2">
-                    <label for="email">Name/Company Name</label>
-                    <input class="w-[inherit] placeholder:italic p-2 rounded-md shadow-2xl" type="name" id="name" name="name" placeholder="Name/Company Name" required />
-                  </div>
-  
-                  <div class="flex flex-col col-span-2">
-                    <label for="email">Email</label>
-                    <input class="w-[inherit] placeholder:italic p-2 rounded-md shadow-2xl" type="email" id="email"
-                    name="email" placeholder="Email" required/>
-                  </div>
-                  
-                  <div class="flex flex-col col-span-2">
-                    <label for="subject">Subject:</label>
-                    <input class="w-[inherit] placeholder:italic p-2 rounded-md shadow-2xl" type="subject" id="subject" name="subject" placeholder="Subject" required />
-                  </div>
-  
-                  <div class="flex flex-col col-span-2">
-                    <label for="message">Message:</label>
-                    <textarea
-                      class="w-[inherit] placeholder:italic p-2 rounded-md shadow-2xl"
-                      id="message"
-                      name="message"
-                      rows="4"
-                      cols="50"
-                      placeholder="Message"
-                      required
-                    ></textarea>
-                  </div>  
-  
-                  <input class="bg-blue-500/60 rounded-xl shadow-xl px-5 py-2 my-3 text-lg font-semibold"type="submit" value="Send">
+            <nav class="text-slate-100 font-semibold space-x-5 font-sans hidden md:flex">
+                <button class="hover:text-yellow-300 hover:underline transition hover:-translate-y-2 hover:translate-x-1 duration-100 ease-out ">Company</button>
+                <button class="hover:text-yellow-300 hover:underline transition hover:-translate-y-1 hover:translate-x-1 duration-100  ease-out">Send Cargo</button>
+                <button class="hover:text-yellow-300 hover:underline transition ease-out delay-100 hover:-translate-y-1 hover:translate-x-1">Transporters</button>
                 
-              </form>
+            </nav>
+
+          </div>
+
+          <div class="hidden md:flex lg:mr-[200px]">
+            <button class="w-36 px-2 py-1 bg-white text-blue-700 hover:bg-yellow-300 font-semibold shadow-2xl rounded-2xl ">Book a Delivery</button>
+          </div>
+      </section>  
+      
+      
+    </header>
+    
+    <main>
+      <section class="relative h-[90vh]">
+        <div class="absolute w-full h-full -translate-x-[50%] left-[50%] overflow-clip">
+          <!--overlay-->
+          <div class="absolute top-0 left-0 object-cover w-full h-[90vh] z-20 bg-black/40 ">
+            <div class="ml-10 mt-16 w-[400px] font-bold md:ml-24 text-white">
+              <p class="uppercase font-bold text-4xl md:text-6xl">Deliver Your<br /> Products<br /> with ease</p>
+              <p class="mt-8 text-lg font-bold font-playpen break-words md:text-2xl">Let Tasky Logistics handle the <br /> heavy lifting while you focus on <br /> what's important- Your Business</p>
+
+              <p class="mt-8 text-xl italic">Give us a Call: +254101306622</p>
+            
+              <button class="w-32 mt-5 p-2 bg-blue-700/80 hover:bg-yellow-300 font-semibold shadow-2xl rounded-2xl ">Get A Quote</button>
+            </div>
+          </div>
+          <img class="w-full h-[90vh] object-cover" src="{{url_for('static', filename='media/truck.jpg')}}"/>
+      
+        </div>
+      </section>
+
+      <!--why Us-->
+      <section class="p-5 ml-10 md:ml-28 ">
+        <h1 class="font-bold text-yellow-300 text-2xl">Why Us?</h1>
+        <h2 class="pb-5 text-lg">At Tasky Logistics Ltd, our sole objective is to assist you in landing your imports and exports timeously, cost effectively and with a minimum unplanned risks or events.<br />
+           How will we achieve this?</h2>
+        <div class="flex flex-col gap-10 md:flex-row ">
+          <div class="w-auto md:w-[400px] h-auto rounded-md shadow-2xl bg-white p-4 font-normal">
+            <span><i class="fa-solid fa-money-check-dollar fa-2xl" style="color:rgba(250, 202, 21, 0.886);"></i></span>
+              <h2 class="text-blue-700 font-semibold pt-2">Rates</h2>
+                <p>By providing you with competitive services measured in terms of rates and costs.</p>
+          
+              </div>
+          <div class="w-auto md:w-[400px] h-auto rounded-md shadow-2xl bg-white p-4 font-normal">
+            <span><i class="fa-solid fa-thumbs-up fa-2xl" style="color: rgba(250, 202, 21, 0.968);"></i></span>
+            <h2 class="text-blue-700 font-semibold pt-2">Quality</h2>
+                <p>By implementing a set of quality standards that meet your expectations and by reviewing our performance against them regularly.</p>
+          
+          </div>
+          <div class="w-auto md:w-[400px] h-auto rounded-md shadow-2xl bg-white p-4 font-normal">
+            <span><i class="fa-solid fa-arrow-trend-up fa-2xl" style="color: rgba(250, 202, 21, 0.968);"></i></span>
+            <h2 class="text-blue-700 font-semibold pt-2">Effeciency</h2>
+                <p>Our goal is your satisfaction. We want to provide you with the exact services you need and work closely with your team to meet all your company’s logistics needs</p>
+          
           </div>
         </div>
-      </div>
-
-      <div class="flex justify-center items-center font-serif font-semibold text-xl">
-        <p>You can also Reach us through:<br />
-          Phone: 0101306622 <br />
-          Email: sales@taskylogistics.co.ke
-        </p>
-      </div>
-  </section>
-
-  <p class="text-center w-full pb-0 py-2 mb-0 text-base min-[375px]:py-3 2xl:text-2xl">&copy;2023 <span class="text-2xl">&#8739</span>All Rights Reserved <span class="text-2xl">&#8739</span>Tasky Logistics Ltd.</p>
+      </section>
+    </main>
+    <!------------------------------------------------------------------------------------->
+    <section class="inset-x-0 pb-0 bottom-0 w-full">  
+      <footer class="bg-blue-700/80">
+        
+      
+      <p class="text-center w-full pb-0 py-2 mb-0 text-base min-[375px]:py-3 2xl:text-2xl">&copy;2023 <span class="text-2xl">&#8739</span>All Rights Reserved <span class="text-2xl">&#8739</span>Tasky Logistics Ltd.</p>
+      </footer>
+    </section>
         <script>
           AOS.init({
             duration: 1500, // values from 0 to 3000, with step 50ms
@@ -248,5 +107,6 @@
           });
           
         </script>
+        <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
   </body>
 </html>
