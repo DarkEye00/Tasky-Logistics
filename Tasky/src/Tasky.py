@@ -8,6 +8,10 @@ app.secret_key = "T45ky"
 def index():
     
     return render_template("index.html")
+@app.route('/About_Us')
+def about():
+
+    return render_template("about.html")
 
 
 if __name__ == ("__main__"):
