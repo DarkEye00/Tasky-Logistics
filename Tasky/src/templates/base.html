@@ -26,7 +26,7 @@
     <!--header-->
     <header class="w-full fixed bg-blue-700/80 z-50 font-Rubik">
       <section class="flex justify-between items-center w-full p-3">
-        <img class="w-20 ml-10 md:ml-20" src="{{url_for('static', filename='media/Tasky.jpg')}}"/>
+        <a href="{{url_for('index')}}"><img class="w-20 ml-10 md:ml-20" src="{{url_for('static', filename='media/Tasky.jpg')}}"/></a>
 
         <div>
           <button class="text-4xl font-bold text-white md:hidden">&#9776;</button>
@@ -66,7 +66,7 @@
     </main>
 
         <!------------------------------------------------------------------------------------->
-        <section class="inset-x-0 pb-0 bottom-0 w-full bg-blue-700/80 rounded-bl-[5rem]">  
+        <section class="inset-x-0 pb-0 bottom-0 w-full bg-blue-700/80 rounded-bl-[4rem] mt-10">  
           <footer class=" text-slate-300 font-semibold font-Rubik flex flex-col md:flex-row p-5 gap-10 lg:gap-20 text-lg ">
             <div>
               <img class="w-[150px] mb-5" src="{{url_for('static', filename='media/Tasky.jpg')}}"/>
