@@ -1,26 +1,26 @@
 {% extends 'base.html' %} {% block content %}
 
-<section class="relative h-[80vh] pb-10">
-  <div class="w-full">
+<section class="relative h-[80vh]">
+  <div
+    class="absolute w-full h-full -translate-x-[50%] left-[50%] overflow-clip"
+  >
+    <!--overlay-->
     <div
-      class="absolute h-[80vh] w-full left-0 top-0 z-20 object-cover bg-black/40"
+      class="absolute top-0 left-0 object-cover w-full h-[80vh] z-20 bg-black/40"
     >
-      <div class="text-white ml-10 md:ml-20 mt-16 flex flex-col justify-center">
-        <h1 class="text-4xl font-semibold md:text-6xl">
+      <div class="mt-16 mx-5 w-auto font-bold md:ml-24 text-slate-100">
+        <h1 class="text-4xl font-semibold font-serif">
           Seamless Logistics<br />
           Timely Solutions
         </h1>
-
-        <div class="w-[350px]">
-          <h2
-            class="font-playpen font-semibold pt-5 text-md md:text-xl text-left break-words text-slate-100"
-          >
-            We provide you with a “one-stop-solution” to meet all of your
-            logistics requirements. You will get personalized service at every
-            level with Tasky Logistics because we are truly independent, make
-            our own decisions and specialize in our home market.
-          </h2>
-        </div>
+        <p
+          class="w-[300px] mt-4 text-sm font-bold font-playpen break-words md:text-2xl"
+        >
+          We provide you with a “one-stop-solution” to meet all of your
+          logistics requirements. You will get personalized service at every
+          level with Tasky Logistics because we are truly independent, make our
+          own decisions and specialize in our home market.
+        </p>
       </div>
     </div>
     <img
@@ -30,15 +30,17 @@
   </div>
 </section>
 
-<section class="py-10">
+<section class="py-8">
   <div class="px-5 py-2 md:ml-16">
     <h1 class="font-bold text-yellow-300 text-2xl pb-3">About us</h1>
     <div class="flex flex-col min-[900px]:flex-row">
-      <img
-        class="object-cover max-[900px]:mx-14"
-        src="{{url_for('static', filename='media/truck2.jpg')}}"
-        alt="truck"
-      />
+      <div class="flex justify-center">
+        <img
+          class="object-cover w-auto h-[300px] max-[900px]:mx-14"
+          src="{{url_for('static', filename='media/truck2.jpg')}}"
+          alt="truck"
+        />
+      </div>
 
       <div class="pl-5 pt-5 text-left">
         <p>
@@ -61,16 +63,15 @@
 </section>
 
 <!------Testimonials-->
+
 <section
   id="gallery"
-  class="relative w-full text-gray-800 bg-slate-200 overflow-hidden hidden sm:block"
+  class="hidden md:flex relative w-full text-gray-800 bg-slate-200 overflow-hidden"
   data-carousel="slide"
 >
-  <h1 class="font-bold text-yellow-300 text-2xl py-3 ml-20">
-    Client Testimonials
-  </h1>
+  <h1 class="font-bold text-yellow-300 text-2xl py-3 ml-20">Testimonials</h1>
   <!--carousel wrapper-->
-  <div class="relative overflow-hidden h-[450px] w-[40rem]">
+  <div class="relative overflow-hidden h-[450px] w-[40rem] mt-5">
     <!--Item 1-->
     <figure
       class="my-10 hidden duration-700 ease-in-out"
@@ -184,11 +185,8 @@
   </div>
 </section>
 
-<!---Testimonial phone section-->
 <section class="sm:hidden bg-slate-200 py-5">
-  <h1 class="font-bold text-yellow-300 text-2xl py-3 ml-16">
-    Client Testimonials
-  </h1>
+  <h1 class="font-bold text-yellow-300 text-2xl py-3 ml-16">Testimonials</h1>
 
   <figure class="my-10 mx-10">
     <blockquote
@@ -249,7 +247,7 @@
 </section>
 
 <section class="bg-white w-full py-8">
-  <div class="grid grid-flow-col col-span-3 gap-x-4 mx-4">
+  <div class="grid grid-flow-col gap-x-4 mx-4">
     <div>
       <h2 class="font-bold text-yellow-300 text-xl">Mission</h2>
       <p>
@@ -264,7 +262,7 @@
         chain requirements within Kenya and throughout the rest of East Africa.
       </p>
     </div>
-    <div>
+    <div class="hidden md:block">
       <h2 class="font-bold text-yellow-300 text-xl">Core Values</h2>
       <ul class="list-disc">
         <li>Integrity</li>
@@ -275,4 +273,4 @@
   </div>
 </section>
 
-{% endblock %}
+{% endblock%}
