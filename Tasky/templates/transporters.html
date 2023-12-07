@@ -14,10 +14,10 @@
         <h1 class="text-xl md:text-6xl">
           Do you own a Truck/Van/Pickup and wish to work with us?
         </h1>
-        <h2 class="w-[400px]">
+        <h2 class="w-auto text-base">
           We are actively looking for drivers to collaborate with, fill in the
           form below or call
-          <span class="text-blue-800 font-bold">+254 759 600 596</span> for more
+          <span class="text-blue-900 font-bold">+254 759 600 596</span> for more
           inquiries
         </h2>
       </div>
@@ -51,6 +51,7 @@
             class="rounded-md w-auto bg-gray-200"
             type="text"
             name="Name"
+            id="fullName"
             placeholder="Your Name"
             required
           />
@@ -59,6 +60,7 @@
             class="rounded-md w-auto bg-gray-200"
             type="email"
             name="Email"
+            id="email"
             placeholder="Email Address"
             required
           />
@@ -67,21 +69,21 @@
             type="text"
             name="phoneNumber"
             placeholder="Phone Number"
-            required
           />
           <textarea
             class="rounded-md w-auto bg-gray-200"
             rows="4"
+            id="message"
             placeholder="Vehicle and Additional Information"
             required
           ></textarea>
-          <div class="flex justify-center p-1">
-            <button
-              class="bg-blue-700 hover:bg-yellow-300 hover:text-slate-300 text-slate-100 w-32 font-semibold p-2 rounded-md"
-            >
-              Send
-            </button>
-          </div>
+
+          <button
+            onclick="sendRequest()"
+            class="bg-blue-700 hover:bg-yellow-300 hover:text-slate-300 text-slate-100 w-32 font-semibold p-2 rounded-md flex justify-center p-1"
+          >
+            Send
+          </button>
         </div>
       </div>
     </div>

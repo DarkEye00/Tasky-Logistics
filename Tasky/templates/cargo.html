@@ -1,67 +1,69 @@
 {% extends 'base.html' %} {% block content %}
 <!--why Us-->
-<section class="py-10 mx-10 md:mx-28">
-  <h1 class="font-bold text-yellow-300 text-2xl">Why Us?</h1>
-  <h2 class="pb-5 text-lg">
-    At Tasky Logistics Ltd, our sole objective is to assist you in landing your
-    imports and exports timeously, cost effectively and with a minimum unplanned
-    risks or events.<br />
-    How will we achieve this?
-  </h2>
-  <div class="h-full flex flex-col gap-10 lg:flex-row">
-    <div
-      class="rounded-md shadow-2xl bg-white p-4 font-normal lg:w-[60rem]"
-      data-aos="flip-up"
-    >
-      <span
-        ><i
-          class="fa-solid fa-money-check-dollar fa-2xl"
-          style="color: rgba(250, 202, 21, 0.886)"
-        ></i
-      ></span>
-      <h2 class="text-blue-700 font-semibold pt-2">Rates</h2>
-      <p>
-        By providing you with competitive services measured in terms of rates
-        and costs.
-      </p>
+<section class="bg-white">
+  <section class="py-10 mx-10 md:mx-28">
+    <h1 class="font-bold text-yellow-300 text-2xl">Why Us?</h1>
+    <h2 class="pb-5 text-lg">
+      At Tasky Logistics Ltd, our sole objective is to assist you in landing
+      your imports and exports timeously, cost effectively and with a minimum
+      unplanned risks or events.<br />
+      How will we achieve this?
+    </h2>
+    <div class="h-full flex flex-col gap-10 lg:flex-row">
+      <div
+        class="rounded-md shadow-2xl bg-white p-4 font-normal lg:w-[60rem]"
+        data-aos="flip-up"
+      >
+        <span
+          ><i
+            class="fa-solid fa-money-check-dollar fa-2xl"
+            style="color: rgba(250, 202, 21, 0.886)"
+          ></i
+        ></span>
+        <h2 class="text-blue-700 font-semibold pt-2">Rates</h2>
+        <p>
+          By providing you with competitive services measured in terms of rates
+          and costs.
+        </p>
+      </div>
+      <div
+        class="rounded-md shadow-2xl bg-white p-4 font-normal lg:w-[60rem]"
+        data-aos="flip-up"
+      >
+        <span
+          ><i
+            class="fa-solid fa-thumbs-up fa-2xl"
+            style="color: rgba(250, 202, 21, 0.968)"
+          ></i
+        ></span>
+        <h2 class="text-blue-700 font-semibold pt-2">Quality</h2>
+        <p>
+          By implementing a set of quality standards that meet your expectations
+          and by reviewing our performance against them regularly.
+        </p>
+      </div>
+      <div
+        class="rounded-md shadow-2xl bg-white p-4 font-normal lg:w-[60rem]"
+        data-aos="flip-up"
+      >
+        <span
+          ><i
+            class="fa-solid fa-arrow-trend-up fa-2xl"
+            style="color: rgba(250, 202, 21, 0.968)"
+          ></i
+        ></span>
+        <h2 class="text-blue-700 font-semibold pt-2">Effeciency</h2>
+        <p>
+          Our goal is your satisfaction. We want to provide you with the exact
+          services you need and work closely with your team to meet all your
+          company’s logistics needs
+        </p>
+      </div>
     </div>
-    <div
-      class="rounded-md shadow-2xl bg-white p-4 font-normal lg:w-[60rem]"
-      data-aos="flip-up"
-    >
-      <span
-        ><i
-          class="fa-solid fa-thumbs-up fa-2xl"
-          style="color: rgba(250, 202, 21, 0.968)"
-        ></i
-      ></span>
-      <h2 class="text-blue-700 font-semibold pt-2">Quality</h2>
-      <p>
-        By implementing a set of quality standards that meet your expectations
-        and by reviewing our performance against them regularly.
-      </p>
+    <div class="mt-5 text-3xl break-words">
+      <p>Fill the form below to request a Standardized Freight quote from us</p>
     </div>
-    <div
-      class="rounded-md shadow-2xl bg-white p-4 font-normal lg:w-[60rem]"
-      data-aos="flip-up"
-    >
-      <span
-        ><i
-          class="fa-solid fa-arrow-trend-up fa-2xl"
-          style="color: rgba(250, 202, 21, 0.968)"
-        ></i
-      ></span>
-      <h2 class="text-blue-700 font-semibold pt-2">Effeciency</h2>
-      <p>
-        Our goal is your satisfaction. We want to provide you with the exact
-        services you need and work closely with your team to meet all your
-        company’s logistics needs
-      </p>
-    </div>
-  </div>
-  <div class="mt-5 text-3xl break-words">
-    <p>Fill the form below to request a Standardized Freight quote from us</p>
-  </div>
+  </section>
 </section>
 
 <section id="quote" class="py-5">
@@ -88,38 +90,33 @@
             class="rounded-md w-auto bg-gray-200"
             type="text"
             name="Name"
+            id="fullName"
             placeholder="Your Name"
             required
           />
           <input
             class="rounded-md w-auto bg-gray-200"
             type="text"
-            name="Compnay"
+            name="Company"
             placeholder="Company Name"
-            required
           />
           <input
             class="rounded-md w-auto bg-gray-200"
-            type="text"
-            name="Pickup"
-            placeholder="Pickup location"
-            required
+            type="email"
+            id="email"
+            placeholder="Email Address"
           />
-          <input
-            class="rounded-md w-auto bg-gray-200"
-            type="text"
-            name="Destination"
-            placeholder="Delivery location"
-            required
-          />
+
           <textarea
             class="rounded-md w-auto bg-gray-200"
             rows="4"
             placeholder="Freight Information"
+            id="message"
             required
           ></textarea>
           <div class="flex justify-center p-1">
             <button
+              onclick="sendMail()"
               class="bg-blue-700 hover:bg-yellow-300 text-slate-200 hover:text-slate-400 w-32 font-semibold p-2 rounded-md"
             >
               Send

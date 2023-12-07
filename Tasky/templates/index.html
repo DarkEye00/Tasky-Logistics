@@ -6,7 +6,9 @@
     <meta name="description" content="Delivering fast and reliable logistics solutions. Your go-to company for transport Logistics in Kenya">
     <meta name="keywords" content="logistics, shipping, supply chain, warehousing, delivery, transportation">
     <meta name="robots" content="index, follow">
+
     <title>Tasky Logistics</title>
+
     <link rel="shortcut icon" type="image/png" href="{{url_for('static', filename='media/Tasky ico.png')}}" />
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,6 +21,30 @@
     <script src="https://kit.fontawesome.com/ed6fec6a07.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css"  rel="stylesheet" />
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+      emailjs.init("38s0k3bpKSgv4F4Dy");
+    })();
+    </script>
+
+    <script type="text/javascript">
+        function sendMail(){
+    var params = {
+        name : document.getElementById("fullName").value,
+        email : document.getElementById("email").value,
+        message : document.getElementById("message").value
+    }
+     emailjs.send("service_npt13v2", "template_fkjchtc", params).then(function (res){
+        alert("Email Sent Succesfully! " + res.status);
+        location.reload();
+     } )
+    }
+    </script>
+
 
 
   </head>
@@ -134,16 +160,15 @@
                       <img class="object-cover w-[400px] h-[500px] hidden md:block" src="{{url_for('static', filename='media/CC.webp')}}" />
                           <div class="flex flex-col px-10 space-y-5">
                             <h2 class="font-semibold text-blue-700 text-lg">Get a Quote</h2>
-                            <input class="rounded-md w-auto bg-gray-200 " type="text" name="Name" placeholder="Your Name" required >
-                            <input class="rounded-md w-auto bg-gray-200 " type="text" name="Compnay" placeholder="Company Name" required >
-                            <input class="rounded-md w-auto bg-gray-200 " type="email" name="Email" placeholder="you@company.co" required >
-                            <input class="rounded-md w-auto bg-gray-200 " type="text" name="phoneNumber" placeholder="Phone Number" required>
+                            <input class="rounded-md w-auto bg-gray-200 " type="text" name="Name" placeholder="Your Name" id="fullName" required >
+                            <input class="rounded-md w-auto bg-gray-200 " type="text" name="Compnay" placeholder="Company Name"  >
+                            <input class="rounded-md w-auto bg-gray-200 " type="email" name="Email" placeholder="Email Address" id="email" required >
                             <textarea class="rounded-md w-auto bg-gray-200 " rows="4"
-                            placeholder="Additional Information"
+                            placeholder="Additional Information" id="message"
                             required ></textarea>
-                            <div class="flex justify-center p-1">
-                                <button class="bg-blue-700 hover:bg-yellow-300 text-slate-200 hover:text-slate-400 w-32 font-semibold p-2 rounded-md">Send</button>
-                            </div>  
+                            
+                                <button onclick="sendMail()" class="bg-blue-700 hover:bg-yellow-300 text-slate-200 hover:text-slate-400 w-32 font-semibold p-2 rounded-md">Send</button>
+                             
 
                           </div>
 
@@ -184,16 +209,17 @@
 
       <div class="flex flex-col justify-between items-center">
             <div class="flex flex-row space-x-5 ml-10">
-              <p><i class="fa-brands fa-linkedin" style="color: #f1f2f4;"></i></p>
-              <p><i class="fa-brands fa-facebook" style="color: #f1f2f4;"></i></p>
-              <p><i class="fa-brands fa-instagram" style="color: #f1f2f4;"></i></p>
-              <p><i class="fa-brands fa-x-twitter" style="color: #f1f2f4;"></i></p>
+              <a href="#"><i class="fa-brands fa-linkedin" style="color: #f1f2f4;"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=61552839791787"><i class="fa-brands fa-facebook" style="color: #f1f2f4;"></i></a>
+              <a href="https://www.instagram.com/taskylogistics/"><i class="fa-brands fa-instagram" style="color: #f1f2f4;"></i></p>
+              <a href="#"><i class="fa-brands fa-x-twitter" style="color: #f1f2f4;"></i></a>
             </div>
             <div>
               <p class=" text-slate-200 text-center w-full text-base 2xl:text-2xl mr-10">&copy;2023 <span class="text-2xl">&#8739</span>All Rights Reserved <span class="text-2xl">&#8739</span>Tasky Logistics Ltd.</p>
             </div>
         </div>
       </section>
+        
         <script>
           AOS.init({
             duration: 1500, // values from 0 to 3000, with step 50ms

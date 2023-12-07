@@ -25,4 +25,4 @@ def cargo():
 
 
 if __name__ == ("__main__"):
-    freezer.freeze()
+    app.run(debug=True)
